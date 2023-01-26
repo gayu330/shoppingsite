@@ -1,0 +1,81 @@
+.align
+{
+   background-image: url(https://cdn.create.vista.com/api/media/medium/287445254/stock-photo-top-view-colorful-paper-bags?token=);
+   height: 100vh;
+   display: flex;
+   align-items: center;
+}
+.login
+{
+   background-color: #5656568e;
+   padding: 112px;
+   width: 35%;
+   height: 56%;
+   margin: auto;
+   margin-top: 278px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 145px;
+}
+.login h1
+{
+    color: #410a88;
+}
+.login input
+{
+    margin: 10px 0;
+    width: 50%;
+    margin-left: 33px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.login input::placeholder
+{
+    color: #fafafa;
+}
+.login button
+{
+    padding: 10px;
+    background-color: rgb(45, 9, 177);
+    color: #fafafa;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 60%;
+}
+.login button:hover
+{
+    background-color: rgb(2, 2, 1);
+}
+.login button:active
+{
+    background-color: rgb(209, 250, 45);
+}
+.login button a
+{
+    text-decoration: none;
+    color: #fafafa;
+}
+.login-btn
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.login-btn p
+{
+    color: #fafafa;
+    padding-right: 20px;
+}
+.login-btn p span a
+{
+    color: rgb(206, 39, 39);
+    text-decoration: underline;
+    cursor: pointer;
+}
