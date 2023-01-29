@@ -7,7 +7,7 @@ import Footer from "./footer";
 function Cart() {
 
     const items = useSelector(totalitems)
-    console.log(items);
+    console.log("prodyuct");
     return (
         <>
            
