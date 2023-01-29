@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./navbar";
+
 import { totalitems } from "./addtocartlogic";
 import { useSelector } from "react-redux";
 import './cart.css'
@@ -10,7 +10,7 @@ function Cart() {
     console.log(items);
     return (
         <>
-            <Navbar/>
+           
             {
                 items.map((val) => {
                     return (

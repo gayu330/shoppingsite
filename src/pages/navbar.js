@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-
+import { totalitems } from "./addtocartlogic";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
-    
+const item = useSelector(totalitems)
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light bg-white py-3 shadow-sm">
@@ -32,10 +32,10 @@ const Navbar = () => {
                         </ul>
                        
                         <div className="buttons">
-                            <NavLink to="/Cart" className="btn btn-outline-dark ms-2">
-                                <i className="fa fa-shopping-cart me-1"></i>Cart
+                            <NavLink to="/cart" className="btn btn-outline-dark ms-2">
+                                <i className="fa fa-shopping-cart me-1" ></i>Cart {item.length}
                             </NavLink>
-                            <NavLink className="pe-5">
+                            <NavLink to ="/home" className="pe-5">
                             <i class="fa fa-user" aria-hidden="true">Profile</i>
                             </NavLink>
                         </div>

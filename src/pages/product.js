@@ -2,6 +2,7 @@ import React,{useEffect,useState} from "react";
 import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { Addtocart } from "./addtocartlogic";
+
 import { useDispatch } from "react-redux";
 const Product = ()=>{
     const {id}= useParams();
@@ -44,7 +45,7 @@ const Product = ()=>{
                         ${product.price}
                     </h3>
                     <p className="lead">{product.description}</p>
-                    <button className="btn btn-outline-dark px-4 py-2">onClick={()=>dispatch(Addtocart(product))}
+                    <button className="btn btn-outline-dark px-4 py-2"  onClick={()=>dispatch(Addtocart(product))}> 
                         Add to cart
                     </button>
                     <NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">

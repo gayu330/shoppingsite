@@ -31,7 +31,7 @@ const history = useHistory()
 
 function login()
 {
-    if(value.length !== 0)
+    if(value.email.length!== 0)
     {
         if(value.email == user.email)
         {

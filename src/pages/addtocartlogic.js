@@ -10,13 +10,13 @@ export const cartslice=createSlice({
     reducers:{
 
        Addtocart :(state,action)=>{
-         let check = state.item.findIndex((val)=>val.img == action.payload.img)
+         let check = state.item.findIndex((val)=>val.image == action.payload.image)
          if(check == -1)
          {
             state.item=[...state.item,{
-                img:action.payload.img,
-                productname:action.payload.productName,
-                productprice:action.payload.Price
+                img:action.payload.image,
+                productname:action.payload.title,
+                productprice:action.payload.price
              }]
          }
         }
