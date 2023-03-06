@@ -20,11 +20,17 @@ export const cartslice=createSlice({
              }]
          }
         }
+        ,
+         removefromcart :(state,action)=>{
+            state.item=state.item.filter(val=>val.id != action.payload)
+         }
+       
+        }
     }
 
-})
+)
 
-export const {Addtocart}=cartslice.actions
+export const {Addtocart,removefromcart}=cartslice.actions
 export const totalitems=(state)=>state.cart.item
 export const search=(state)=>state.cart.Filter
 export default cartslice.reducer

@@ -1,9 +1,12 @@
 import {configureStore} from  "@reduxjs/toolkit"
 
-import  cartslice  from "../addtocartlogic"
+import  cartslice  from "../cart/addtocartlogic"
+import counter from "../cart/counter"
+import profilelogic from "../profile/profilelogic"
 export default configureStore({
     reducer:{
-    cart:cartslice
-
+    cart:cartslice ,
+    counter:counter,
+    profile:profilelogic
     }
 })

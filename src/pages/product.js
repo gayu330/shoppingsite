@@ -1,27 +1,27 @@
 import React,{useEffect,useState} from "react";
 import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { Addtocart } from "./addtocartlogic";
+import { Addtocart } from "./cart/addtocartlogic";
 
 import { useDispatch } from "react-redux";
 const Product = ()=>{
     const {id}= useParams();
     const [product,setProduct]=useState([]);
-    const [loading,setLoading]=useState(false);
+    //const [loading,setLoading]=useState(false);
 
     useEffect (()=>{
         const getProduct = async ()=>{
-            setLoading(true);
+            //setLoading(true);
             const response = await fetch(`https://fakestoreapi.com/products/${id}`);
             setProduct(await response.json());
-            setLoading(false)
+            //setLoading(false)
         }
         getProduct();
     },[]);
     const Loading=()=>{
         return(
             <>
-            <div className="col-md-6"> </div>
+            
             </>
         )
     }
@@ -59,7 +59,7 @@ const Product = ()=>{
         <div>
             <div className="container py-5">
                 <div className="row py-2">
-                    {loading ? <Loading /> : <ShowProduct />}
+                    { <ShowProduct />}
                 </div>
             </div>
         </div>

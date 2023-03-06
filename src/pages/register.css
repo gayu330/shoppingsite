@@ -1,6 +1,7 @@
 .sign-up
 {
     background-color:#7f86cab0;;
+    border-color: aqua;
    padding: 37px;
    width: 50%;
    margin: auto;
@@ -52,7 +53,7 @@
 .sign-up-bg
 {
     background-image: url(https://img.wallpapic.com/i1386-129-133/thumb/black-textures-darkness-fog-wallpaper.jpg);
-   height: 500%;;
+   height:1000px;;
    display: flex;
    align-items: center;
 }

@@ -103,7 +103,7 @@ return (
                 <input
                     type='email'
                     name='email'
-                    placeholder='your@email.com'
+                    placeholder='you@email.com'
                     onChange={checkHandeler}
                 /><br></br>
                 <small>{error.emailErr}</small>
@@ -117,14 +117,14 @@ return (
                 <input
                     type='password'
                     name='password'
-                    placeholder='Pa$WoRd'
+                    placeholder='Password'
                     onChange={checkHandeler}
                 /><br></br>
                 <small>{error.passwordErr}</small>
                 <input
                     type='password'
-                    name='re_password'
-                    placeholder='RE-Pa$WoRd'
+                    name='repassword'
+                    placeholder='REPassword'
                     onChange={checkHandeler}
                 /><br></br>
                 <small>{error.re_passwordErr}</small>

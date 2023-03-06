@@ -1,17 +1,18 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import { Link } from "react-router-dom";
 import Products from "./products";
+import  "./home.css"
 
 const Home = () => {
    
         return (
             <div>
             <Carousel>
-                <Carousel.Item>
+                <Carousel.Item >
                         <img
+                            class="slider"
                             className="d-block w-100 img-fluid "
-                            src="https://img.freepik.com/free-vector/template-banner-online-store-with-shopping-cart-with-purchases-boxes-delivery-from-supermarket-vector-illustration_548887-104.jpg?size=626&ext=jpg&ga=GA1.2.1133880596.1674738263"
+                            src="https://img.freepik.com/free-psd/horizontal-banner-template-big-sale-with-woman-shopping-bags_23-2148786755.jpg?size=626&ext=jpg"
                             alt="First slide"
                             height="5px"
                         />
@@ -22,8 +23,9 @@ const Home = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                      <img
+                        class="slider"
                         className="d-block w-100 img-fluid"
-                        src="https://thumbs.dreamstime.com/b/online-shopping-landing-page-banner-concept-mobile-app-template-vector-illustration-flat-design-online-shopping-landing-page-127220971.jpg"
+                        src="https://img.freepik.com/free-psd/modern-sales-banner-template_23-2148995448.jpg?size=626&ext=jpg&ga=GA1.2.2051288435.1675056709"
                         alt="Second slide"
                     />
 
@@ -32,8 +34,9 @@ const Home = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                      <img
+                        class="slider"
                         className="d-block w-100 img-fluid"
-                        src="https://cdn3.vectorstock.com/i/1000x1000/12/52/men-accessories-horizontal-banner-set-vector-18161252.jpg"
+                        src="https://img.freepik.com/free-psd/fashion-store-template-banner_23-2148707242.jpg?size=626&ext=jpg&ga=GA1.1.2051288435.1675056709&semt=sph"
                         alt="Third slide"
                     />
                 </Carousel.Item>

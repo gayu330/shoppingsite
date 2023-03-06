@@ -1,7 +1,8 @@
 .align
 {
-   background-image: url(https://cdn.create.vista.com/api/media/medium/287445254/stock-photo-top-view-colorful-paper-bags?token=);
-   height: 100vh;
+   background-image: url("https://t4.ftcdn.net/jpg/02/68/80/71/360_F_268807166_oPVMMlJcxy4OjBDkl9JPxqfJeMC98yNm.jpg");
+   height:100vh;
+
    display: flex;
    align-items: center;
 }
@@ -18,6 +19,7 @@
    flex-direction: column;
    align-items: center;
    border-radius: 145px;
+   border-color: aqua;
 }
 .login h1
 {

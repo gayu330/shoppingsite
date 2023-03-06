@@ -9,12 +9,12 @@ const Products = () => {
 
     useEffect(() => {
         const getProducts = async () => {
-            setLoading(true);
+           setLoading(true);
             const response = await fetch("https://fakestoreapi.com/products");
             if (componentMounted) {
                 setData(await response.clone().json());
                 setFilter(await response.json());
-                setLoading(false);
+               setLoading(false);
                 console.log(filter)
             }
             return () => {
@@ -23,12 +23,14 @@ const Products = () => {
         }
         getProducts();
     }, []);
-    const Loading = () => {
-        return (
-        <>
-           
-        </>
+    const Loading =()=>{
+        return(
+            <>
+
+            </>
         )
+            
+        
     };
     const filterProduct=(cat) =>{
         const updatedList=data.filter((x)=>x.category === cat);
@@ -75,7 +77,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    {loading ? <Loading /> : <ShowProducts />}
+                    <ShowProducts/>
                 </div>
             </div>
         </div>
